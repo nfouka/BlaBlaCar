@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+    
+
+    <services>
+        <service id="entityManager" class="\Psr\Cli\DB">
+                        <argument>%host_db%</argument>
+                        <argument>%name_db%</argument>
+                        <argument>%user_db%</argument>
+                        <argument>%user_pass%</argument>
+        </service>
+        
+        
+        <service id="db2" class="\Psr\Cli\DB2">
+                <argument type="service" id="entityManager"></argument>
+        </service>
+        
+
+        
+        
+    </services>
+    
+</container>

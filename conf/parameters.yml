@@ -1,0 +1,7 @@
+parameters:
+    locale: en 
+    host_db: 'localhost'
+    user_db: 'root'
+    user_pass: 'root'
+    name_db: 'database' 
+    port_db: '3306' 
