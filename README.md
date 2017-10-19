@@ -4,5 +4,5 @@
 # BlaBlaCar
 
 
-Une simple application avec l'API BlaBlaCar , avec Symfony Console 
+Une simple application avec l'API BlaBlaCar , Symfony Console 
 
